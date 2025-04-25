@@ -1,0 +1,134 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+.grafico-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.input-container {
+    margin-bottom: 1.25rem; /* Equivalent to mb-5 */
+}
+.input-container label {
+    display: block;
+    margin-bottom: 0.5rem; /* Equivalent to mb-2 */
+    font-weight: 600; /* Equivalent to font-semibold */
+    color: #4b5563; /* Equivalent to text-gray-700 */
+}
+.input-container input {
+    width: 100%;
+    padding: 0.75rem; /* Equivalent to py-3 and px-4 */
+    border-radius: 0.375rem; /* Equivalent to rounded-md */
+    border: 1px solid #d1d5db; /* Equivalent to border-gray-300 */
+    font-size: 1rem; /* Equivalent to text-base */
+    box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.06); /* Inner shadow, more subtle */
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Smooth transition */
+}
+.input-container input:focus {
+    outline: none; /* Remove default outline */
+    border-color: #3b82f6; /* Equivalent to border-blue-500 on focus */
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15); /* Lighter, more modern shadow */
+}
+
+.table-container {
+    margin-top: 2rem;
+    overflow-x: auto;
+}
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden; /* hide the border radius overflow */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.table-container table thead th {
+    background-color: #f3f4f6;
+    color: #6b7280;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid #d1d5db;
+}
+.table-container table tbody td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+.table-container table tbody tr:nth-child(odd) {
+    background-color: #f9fafb;
+}
+.table-container table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+.table-container table tfoot td {
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+    color: #4b5563;
+    border-top: 2px solid #d1d5db;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center buttons */
+    gap: 0.75rem; /* space-x-2, space-y-2 */
+    margin-top: 1.25rem; /* mt-5 */
+}
+.button-container button {
+    padding: 0.75rem 1.5rem; /* py-3 px-6 */
+    border-radius: 0.375rem; /* rounded-md */
+    font-weight: 600; /* font-semibold */
+    color: white;
+    background-color: #3b82f6; /* bg-blue-500 */
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+}
+.button-container button:hover {
+    background-color: #2563eb; /* bg-blue-700 */
+    transform: translateY(-1px); /* Slight lift on hover */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Increased shadow on hover*/
+}
+.button-container button:active {
+    background-color: #1e40af; /* bg-blue-800 */
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Smaller shadow on active */
+}
+
+#analisis-container {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #f7fafc;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border: 1px solid #edf2f7;
+}
+
+#analisis-container h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1e293b;
+}
+#analisis-container p{
+     color: #334155;
+     margin-bottom: 1rem;
+     line-height: 1.75;
+}
+
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .button-container button {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 0.75rem;
+    }
+}
